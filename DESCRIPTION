@@ -7,10 +7,11 @@ Authors@R:
 Description: What the package does (one paragraph).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
+URL: https://github.com/2DegreesInvesting/tiltDevTools,
+    https://2degreesinvesting.github.io/tiltDevTools/
+BugReports: https://github.com/2DegreesInvesting/tiltDevTools/issues
+Imports: 
+    usethis
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
-Imports: 
-    usethis
-URL: https://github.com/2DegreesInvesting/tiltDevTools, https://2degreesinvesting.github.io/tiltDevTools/
-BugReports: https://github.com/2DegreesInvesting/tiltDevTools/issues
