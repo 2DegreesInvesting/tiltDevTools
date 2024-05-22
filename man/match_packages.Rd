@@ -4,7 +4,16 @@
 \alias{match_packages}
 \title{Help find all installed packages matching a pattern}
 \usage{
-match_packages(x)
+match_packages(pattern)
+}
+\arguments{
+\item{pattern}{character string containing a \link[base]{regular expression}
+    (or character string for \code{fixed = TRUE}) to be matched
+    in the given character vector.  Coerced by
+    \code{\link[base]{as.character}} to a character string if possible.  If a
+    character vector of length 2 or more is supplied, the first element
+    is used with a warning.  Missing values are allowed except for
+    \code{regexpr}, \code{gregexpr} and \code{regexec}.}
 }
 \value{
 Character vector.

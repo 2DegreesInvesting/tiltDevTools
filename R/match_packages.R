@@ -10,6 +10,6 @@
 #' @examples
 #' # All packages starting with tilt
 #' match_packages("^tilt")
-match_packages <- function(x) {
-  grep(x, rownames(installed.packages()), value = TRUE)
+match_packages <- function(pattern) {
+  grep(pattern, rownames(installed.packages()), value = TRUE)
 }
