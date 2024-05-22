@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # tiltDevTools
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/2DegreesInvesting/tiltDevTools/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/2DegreesInvesting/tiltDevTools/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of tiltDevTools is to help you reuse development tools.
