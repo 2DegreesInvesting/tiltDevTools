@@ -2,7 +2,8 @@
 
 # tiltDevTools 0.0.0.9006 (2024-05-24)
 
-* `use_pr_checklist()` is n ow retired without deprecation (#7).
+* `use_pr_checklist()` is now retired without deprecation because the package is
+still experimental and has not yet been advertised (#7).
 
 # tiltDevTools 0.0.0.9005 (2024-05-24)
 
