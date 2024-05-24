@@ -1,14 +1,14 @@
-#' Extend `use_dictionary()` for objects of class 'tilt_profile'
-#'
-#' @name use_dictionary
-#' @importFrom rsetools use_dictionary
-#' @inherit rsetools::use_dictionary
-#' @seealso [rsetools::use_dictionary()].
-#'
 #' @export
+#' @importFrom rsetools use_dictionary
+rsetools::use_dictionary
+
+#' Extensions
+#'
+#' * [rsetools::use_dictionary()] is extended with a method for
+#' [tiltIndicator::tilt_profile].
+#'
 #' @examples
 #' library(tiltIndicator)
-#' library(rsetools)
 #'
 #' # Fake output of a tilt indicator profile
 #' product <- data.frame(companies_id = "a", product_col = 1)
@@ -17,13 +17,20 @@
 #' nested
 #'
 #' nested |> class()
-#' # Not what you want
+#'
+#' # Not very useful
 #' nested |> use_dictionary()
 #'
 #' profile <- nested |> tilt_profile()
 #' profile |> class()
+#'
+#' # Useful
 #' # Yes what you want
 #' profile |> use_dictionary()
+#' @name extensions
+NULL
+
+#' @export
 use_dictionary.tilt_profile <- function(data, ...) {
   levels <- list(unnest_product(data), unnest_company(data))
   name <- deparse(substitute(data))

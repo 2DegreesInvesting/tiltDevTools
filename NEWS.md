@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltDevTools 0.0.0.9005 (2024-05-24)
+
+* Docoment `?extensions` (#6).
+
 # tiltDevTools 0.0.0.9004 (2024-05-24)
 
 * Retire `match_packages()` (#4). This is without deprecation since the package
