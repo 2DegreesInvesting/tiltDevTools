@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltDevTools 0.0.0.9004 (2024-05-24)
+
+* Retire match_packages() (#4)
+
+
 # tiltDevTools 0.0.0.9003 (2024-05-24)
 
 * New `use_dictionary()` extends `rsetools::use_dictionary()` with a method for
