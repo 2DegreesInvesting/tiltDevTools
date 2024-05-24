@@ -10,8 +10,8 @@ URL: https://github.com/2DegreesInvesting/tiltDevTools,
     https://2degreesinvesting.github.io/tiltDevTools/
 BugReports: https://github.com/2DegreesInvesting/tiltDevTools/issues
 Imports: 
-    rsetools,
-    tiltIndicator,
+    rsetools (>= 0.0.0.9002),
+    tiltIndicator (>= 0.0.0.9223),
     usethis,
     utils
 Suggests: 
@@ -20,3 +20,6 @@ Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
+Remotes:  
+    2DegreesInvesting/tiltIndicator,
+    maurolepore/rsetools
