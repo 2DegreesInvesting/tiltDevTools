@@ -2,7 +2,6 @@
 
 S3method(use_dictionary,tilt_profile)
 export(use_dictionary)
-export(use_pr_checklist)
 importFrom(rsetools,use_dictionary)
 importFrom(tiltIndicator,unnest_company)
 importFrom(tiltIndicator,unnest_product)
