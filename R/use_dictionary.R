@@ -32,9 +32,14 @@ NULL
 
 #' @export
 use_dictionary.tilt_profile <- function(data, ...) {
-  levels <- list(unnest_product(data), unnest_company(data))
-  name <- deparse(substitute(data))
-  names(levels) <- paste0(name, c("_product", "_company"))
+  .data <- list(product = unnest_product(data), company = unnest_company(data))
+  .name <- deparse(substitute(data))
 
-  rsetools::use_dictionary(levels)
+  for (i in seq_along(.data)) {
+    .data[[i]] <- use_dictionary(.data[[i]], name = .name)
+    .data[[i]]$level <- names(.data[i])
+  }
+
+  out <- Reduce(rbind, .data)
+  relocate_cols(out, c("dataset", "level"))
 }

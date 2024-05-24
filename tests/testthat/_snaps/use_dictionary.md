@@ -1,11 +1,13 @@
 # names datasets with correct structure
 
     Code
-      as.data.frame(use_dictionary(profile))
+      use_dictionary(profile)
     Output
-                dataset          name      type definition
-      1 profile_product  companies_id    double       <NA>
-      2 profile_product a_product_col character       <NA>
-      3 profile_company  companies_id    double       <NA>
-      4 profile_company a_company_col character       <NA>
+      # A tibble: 4 x 5
+        dataset level   name          type      definition
+        <chr>   <chr>   <chr>         <chr>     <chr>     
+      1 profile product companies_id  double    <NA>      
+      2 profile product a_product_col character <NA>      
+      3 profile company companies_id  double    <NA>      
+      4 profile company a_company_col character <NA>      
 
