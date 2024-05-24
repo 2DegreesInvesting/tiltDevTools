@@ -1,8 +1,12 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltDevTools 0.0.0.9006 (2024-05-24)
+
+* `use_pr_checklist()` is n ow retired without deprecation (#xxx).
+
 # tiltDevTools 0.0.0.9005 (2024-05-24)
 
-* Docoment `?extensions` (#6).
+* Document `?extensions` (#6).
 
 # tiltDevTools 0.0.0.9004 (2024-05-24)
 
