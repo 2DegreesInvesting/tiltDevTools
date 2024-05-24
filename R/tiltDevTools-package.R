@@ -7,7 +7,3 @@
 #' @importFrom utils installed.packages
 ## usethis namespace: end
 NULL
-
-#' @export
-#' @importFrom rsetools use_dictionary
-rsetools::use_dictionary
