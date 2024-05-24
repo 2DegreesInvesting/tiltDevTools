@@ -32,8 +32,16 @@ devtools::install_github("2DegreesInvesting/tiltDevTools")
 
 ## Example
 
-```{r example, eval=FALSE}
+```{r example}
+library(tiltIndicator)
 library(tiltDevTools)
 
-use_pr_checklist()
+profile <- tilt_profile(nest_levels(
+  product = tibble(companies_id = "a", x = 1),
+  company = tibble(companies_id = "a", y = TRUE)
+))
+
+profile
+
+use_dictionary(profile)
 ```
