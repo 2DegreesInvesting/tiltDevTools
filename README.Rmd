@@ -32,15 +32,8 @@ devtools::install_github("2DegreesInvesting/tiltDevTools")
 
 ## Example
 
-```{r example}
+```{r example, eval=FALSE}
 library(tiltDevTools)
-library(tiltIndicator)
 
-# Fake the output of some tilt indicator profile
-product <- data.frame(companies_id = 1, a_product_col = "a")
-company <- data.frame(companies_id = 1, a_company_col = "a")
-emissions_profile <- tilt_profile(nest_levels(product, company))
-emissions_profile
-
-use_dictionary(emissions_profile)
+use_pr_checklist()
 ```
