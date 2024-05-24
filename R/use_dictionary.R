@@ -2,35 +2,27 @@
 #' @importFrom rsetools use_dictionary
 rsetools::use_dictionary
 
-#' Extensions
+#' @export
+#' @rdname extensions
 #'
-#' * [rsetools::use_dictionary()] is extended with a method for
-#' [tiltIndicator::tilt_profile].
+#' @description
+#' *  [rsetools::use_dictionary()].
+#'
+#' @param data A '[tilt_profile][tiltIndicator::tilt_profile]'.
+#' @inheritDotParams rsetools::use_dictionary
 #'
 #' @examples
 #' library(tiltIndicator)
 #'
-#' # Fake output of a tilt indicator profile
-#' product <- data.frame(companies_id = "a", product_col = 1)
-#' company <- data.frame(companies_id = "a", company_col = 2)
-#' nested <- nest_levels(product, company)
-#' nested
+#' profile <- tilt_profile(nest_levels(
+#'   product = tibble(companies_id = "a", x = 1),
+#'   company = tibble(companies_id = "a", y = TRUE)
+#' ))
+#' class(profile)
 #'
-#' nested |> class()
+#' profile
 #'
-#' # Not very useful
-#' nested |> use_dictionary()
-#'
-#' profile <- nested |> tilt_profile()
-#' profile |> class()
-#'
-#' # Useful
-#' # Yes what you want
-#' profile |> use_dictionary()
-#' @name extensions
-NULL
-
-#' @export
+#' use_dictionary(profile)
 use_dictionary.tilt_profile <- function(data, ...) {
   .data <- list(product = unnest_product(data), company = unnest_company(data))
   .name <- deparse(substitute(data))

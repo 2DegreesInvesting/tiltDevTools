@@ -8,3 +8,7 @@
 #' @importFrom utils installed.packages
 ## usethis namespace: end
 NULL
+
+#' @export
+#' @importFrom tibble tibble
+tibble::tibble

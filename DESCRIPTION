@@ -12,11 +12,11 @@ BugReports: https://github.com/2DegreesInvesting/tiltDevTools/issues
 Imports: 
     cli,
     rsetools,
+    tibble,
     tiltIndicator,
     utils
 Suggests: 
-    testthat (>= 3.0.0),
-    tibble
+    testthat (>= 3.0.0)
 Remotes: 
     2DegreesInvesting/tiltIndicator,
     maurolepore/rsetools
