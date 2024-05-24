@@ -4,9 +4,9 @@
 \name{tiltDevTools-package}
 \alias{tiltDevTools}
 \alias{tiltDevTools-package}
-\title{tiltDevTools: What the Package Does (One Line, Title Case)}
+\title{tiltDevTools: Tools to Make Developing 'TILT' Packages Easier}
 \description{
-What the package does (one paragraph).
+Tools to make developing 'tilt' packages easier.
 }
 \seealso{
 Useful links:
