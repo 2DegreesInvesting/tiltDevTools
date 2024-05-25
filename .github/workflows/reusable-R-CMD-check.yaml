@@ -1,7 +1,7 @@
 # https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
 on: workflow_call
 
-name: Reusable R-CMD-check
+name: R-CMD-check
 
 permissions: read-all
 
