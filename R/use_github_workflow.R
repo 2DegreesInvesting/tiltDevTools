@@ -1,4 +1,14 @@
-#' Use a GitHub Actions workflow to check a reverse dependency
+#' Use GitHub-Actions workflows to check a package or a reverse dependency
+#'
+#' These functions call [reusable
+#' workflows](https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow)
+#' centrally maintained at 2DegreesInvesting/tiltDevTools.
+#' * `use_github_workflow_check()` calls the same workflow you can get
+#' with `usethis::use_github_actions("check-standard")`. The benefit is that
+#' it's standardized across tilt* repos and you don't have to update it
+#' yourself.
+#' * `use_github_workflow_check_revdep()` works for packages and reverse
+#' dependencies under the same, 2DegreesInvesting organization.
 #'
 #' @param package Character. The name of a package which is depends on the
 #'   package where this workflow runs -- i.e. it's a reverse dependency.

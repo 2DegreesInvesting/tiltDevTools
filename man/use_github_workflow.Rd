@@ -4,7 +4,7 @@
 \alias{use_github_workflow}
 \alias{use_github_workflow_check_revdep}
 \alias{use_github_workflow_check}
-\title{Use a GitHub Actions workflow to check a reverse dependency}
+\title{Use GitHub-Actions workflows to check a package or a reverse dependency}
 \usage{
 use_github_workflow_check_revdep(package)
 
@@ -18,7 +18,16 @@ package where this workflow runs -- i.e. it's a reverse dependency.}
 The first argument, invisibly. Called for its side effect.
 }
 \description{
-Use a GitHub Actions workflow to check a reverse dependency
+These functions call \href{https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow}{reusable workflows}
+centrally maintained at 2DegreesInvesting/tiltDevTools.
+\itemize{
+\item \code{use_github_workflow_check()} calls the same workflow you can get
+with \code{usethis::use_github_actions("check-standard")}. The benefit is that
+it's standardized across tilt* repos and you don't have to update it
+yourself.
+\item \code{use_github_workflow_check_revdep()} works for packages and reverse
+dependencies under the same, 2DegreesInvesting organization.
+}
 }
 \examples{
 \dontshow{if (FALSE) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
