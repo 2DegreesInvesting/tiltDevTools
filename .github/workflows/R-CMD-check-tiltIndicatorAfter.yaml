@@ -45,7 +45,7 @@ jobs:
         needs: check
         working-directory: tiltIndicatorAfter
 
-    - name: Install tiltIndicator
+    Install local package
       run: |
         Rscript -e "pak::local_install()"
 
