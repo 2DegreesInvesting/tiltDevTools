@@ -9,5 +9,5 @@ name: R-CMD-check
 
 jobs:
   call:
-    uses: 2DegreesInvesting/tiltDevTools/.github/workflows/R-CMD-check-{{package}}.yaml@main
+    uses: {{owner_repo}}/.github/workflows/R-CMD-check-{{package}}.yaml@main
     secrets: inherit

@@ -19,7 +19,7 @@ NULL
 use_github_workflow_check_revdep <- function(package) {
   use_github_workflow(
     template = "call-R-CMD-check-package.yaml",
-    data = list(package = package),
+    data = list(owner_repo = "2DegreesInvesting/tiltDevTools", package = package),
     package = package
   )
 }
