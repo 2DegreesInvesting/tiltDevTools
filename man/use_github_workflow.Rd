@@ -11,8 +11,8 @@ use_github_workflow_check_revdep(package)
 use_github_workflow_check()
 }
 \arguments{
-\item{package}{Character. The name of a package which is depends on the
-package where this workflow runs -- i.e. it's a reverse dependency.}
+\item{package}{Character. The name of the reverse dependency you want to
+check. it must be a package under the organization 2DegreesInvesting.}
 }
 \value{
 The first argument, invisibly. Called for its side effect.

@@ -10,8 +10,8 @@
 #' * `use_github_workflow_check_revdep()` works for packages and reverse
 #' dependencies under the same, 2DegreesInvesting organization.
 #'
-#' @param package Character. The name of a package which is depends on the
-#'   package where this workflow runs -- i.e. it's a reverse dependency.
+#' @param package Character. The name of the reverse dependency you want to
+#'   check. it must be a package under the organization 2DegreesInvesting.
 #'
 #' @return The first argument, invisibly. Called for its side effect.
 #'
