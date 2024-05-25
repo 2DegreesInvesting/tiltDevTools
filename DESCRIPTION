@@ -11,9 +11,11 @@ URL: https://github.com/2DegreesInvesting/tiltDevTools,
 BugReports: https://github.com/2DegreesInvesting/tiltDevTools/issues
 Imports: 
     cli,
+    fs,
     rsetools,
     tibble,
     tiltIndicator,
+    usethis,
     utils
 Suggests: 
     testthat (>= 3.0.0)

@@ -3,6 +3,8 @@
 S3method(use_dictionary,tilt_profile)
 export(tibble)
 export(use_dictionary)
+export(use_github_workflow_check)
+export(use_github_workflow_check_revdep)
 importFrom(cli,cli_abort)
 importFrom(rsetools,use_dictionary)
 importFrom(tibble,tibble)
