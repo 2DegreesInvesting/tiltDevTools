@@ -1,5 +1,9 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltDevTools 0.0.0.9008 (2024-05-25)
+
+* Add reusable workflows to test reverse dependencies (#11).
+
 # tiltDevTools 0.0.0.9007 (2024-05-24)
 
 * `use_dictionary()` now outputs the new column `level` (#9).
