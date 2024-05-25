@@ -10,7 +10,7 @@
 #' use_github_workflow_check()
 #'
 #' # A workflow to run R CMD check on reverse dependencies of your package
-#' use_github_workflow_check_revdep("silly")
+#' use_github_workflow_check_revdep("tiltWebTool")
 #' @name use_github_workflow
 NULL
 
