@@ -19,6 +19,7 @@ NULL
 use_github_workflow_check_revdep <- function(package) {
   use_github_workflow(
     template = "call-R-CMD-check-package.yaml",
+    data = list(package = package),
     package = package
   )
 }
@@ -28,11 +29,12 @@ use_github_workflow_check_revdep <- function(package) {
 use_github_workflow_check <- function() {
   use_github_workflow(
     template = "call-R-CMD-check.yaml",
+    data = list(owner_repo = "2DegreesInvesting/tiltDevTools"),
     package = NULL
   )
 }
 
-use_github_workflow <- function(template, package) {
+use_github_workflow <- function(template, package, data) {
   parent <- fs::dir_create(".github", "workflows")
   file <- if (is.null(package)) {
     template
@@ -45,7 +47,7 @@ use_github_workflow <- function(template, package) {
   usethis::use_template(
     template,
     save_as = save_as,
-    data = list(package = package),
+    data = data,
     package = "tiltDevTools"
   )
 
