@@ -44,6 +44,7 @@ use_github_workflow <- function(template, package, data) {
   }
 
   save_as <- fs::path(parent, file)
+
   usethis::use_template(
     template,
     save_as = save_as,
