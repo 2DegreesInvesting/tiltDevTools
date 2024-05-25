@@ -1,5 +1,11 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# tiltDevTools 0.0.0.9009 (2024-05-25)
+
+* New `use_github_workflow_check()` and `use_github_workflow_check_revdep()` help
+setup reusable GitHub-Actions workflows to check a package and it's reverse
+dependencies.
+
 # tiltDevTools 0.0.0.9008 (2024-05-25)
 
 * Add reusable workflows to test reverse dependencies (#11).

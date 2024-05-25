@@ -1,0 +1,13 @@
+# https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+name: R-CMD-check
+
+jobs:
+  call:
+    uses: {{owner_repo}}/.github/workflows/R-CMD-check-{{package}}.yaml@main
+    secrets: inherit
