@@ -15,7 +15,7 @@ use_github_workflow_check()
 check. it must be a package under the organization 2DegreesInvesting.}
 }
 \value{
-The first argument, invisibly. Called for its side effect.
+Called for its side effect.
 }
 \description{
 These functions call \href{https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow}{reusable workflows}

@@ -13,7 +13,7 @@
 #' @param package Character. The name of the reverse dependency you want to
 #'   check. it must be a package under the organization 2DegreesInvesting.
 #'
-#' @return The first argument, invisibly. Called for its side effect.
+#' @return Called for its side effect.
 #'
 #' @examplesIf FALSE
 #' # Run R CMD check on your package
