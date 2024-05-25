@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [main, master]
 
-name: REUSING R-CMD-check
+name: Call R-CMD-check
 
 jobs:
   call-workflow-passing-data:
