@@ -16,10 +16,10 @@
 #' @return The first argument, invisibly. Called for its side effect.
 #'
 #' @examplesIf FALSE
-#' # A workflow to run R CMD check on your package
+#' # Run R CMD check on your package
 #' use_github_workflow_check()
 #'
-#' # A workflow to run R CMD check on reverse dependencies of your package
+#' # R CMD check on a reverse dependencies of your package
 #' use_github_workflow_check_revdep("tiltWebTool")
 #' @name use_github_workflow
 NULL

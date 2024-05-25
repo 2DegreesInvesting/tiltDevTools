@@ -31,10 +31,10 @@ dependencies under the same, 2DegreesInvesting organization.
 }
 \examples{
 \dontshow{if (FALSE) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
-# A workflow to run R CMD check on your package
+# Run R CMD check on your package
 use_github_workflow_check()
 
-# A workflow to run R CMD check on reverse dependencies of your package
+# R CMD check on a reverse dependencies of your package
 use_github_workflow_check_revdep("tiltWebTool")
 \dontshow{\}) # examplesIf}
 }
